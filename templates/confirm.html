@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- PAGE settings -->
+  <link rel="icon" href="https://templates.pingendo.com/assets/Pingendo_favicon.ico">
+  <title>Dragontails | Cryptocurrency Trading</title>
+  <meta name="description" content="Free Bootstrap 4 Pingendo Flat template for restaurant and food">
+  <meta name="keywords" content="Pingendo restaurant food flat free template bootstrap 4">
+  <!-- CSS dependencies -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/static/flat.css" type="text/css">
+  <!-- Script: Make my navbar transparent when the document is scrolled to top -->
+  <script src="/static/js/navbar-ontop.js"></script>
+  <!-- Script: Animated entrance -->
+  <script src="/static/js/animate-in.js"></script>
+</head>
+
+<body >
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md bg-primary navbar-light fixed-top">
+    <div class="container">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar3SupportedContent" aria-controls="navbar3SupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-center justify-content-center" id="navbar3SupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="/">
+              <b>HOME </b>
+            </a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="/buy">BUY</a>
+          </li>
+           <li class="nav-item mx-2">
+            <a class="nav-link" href="/sell">SELL</a>
+          </li>
+           <li class="nav-item mx-2">
+            <a class="nav-link" href="/history">HISTORY</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Cover -->
+  <div class="align-items-center d-flex py-5 cover section-primary" style="background-image: url(&quot;/static/assets/restaurant/cover_light.jpg&quot;);">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7 align-self-center text-lg-left text-center">
+          <h1 class="mb-0 mt-4 display-4">Congratulations!</h1>
+          <p class="mb-5">Get that Crypto!</p>
+        </div>
+        <div class="col-lg-5 p-3">
+          <form class="p-4 section-light bg-light" method="post" action="/buy">
+            <h4 class="mb-3 text-center">Buy cryptocurrency</h4>
+            <div class="form-group">
+              <label>Quantity</label>
+              <input type="number" class="form-control" placeholder="Quantity" name="quantity"> </div>
+            <div class="form-group">
+              <label>Product</label>
+              <select name="product">
+                  {% for p in products %}
+                  <option value="{{p[0]}}">{{p[1]}}</option>
+                  {% endfor %}
+              </select>
+              </div>
+            <button type="submit" class="btn mt-4 btn-block p-2 btn-secondary">
+              <b>Buy</b>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <div class="text-center bg-dark pt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 p-3">
+          <h2 class="mb-4">Contact</h2>
+          <p class="m-0">
+            <a href="tel:+246 - 542 550 5462" class="text-white">+246 - 542 550 5462</a>
+          </p>
+          <p>
+            <a href="mailto:info@pingendo.com" class="text-white">info@pingendo.com</a>
+          </p>
+        </div>
+        <div class="col-md-4 p-3">
+          <h2 class="mb-4">Location</h2>
+          <p>
+            <a href="https://www.google.it/maps" target="blank" class="text-white">23 Fake Street <br>Seattle, WA 00000</a>
+          </p>
+        </div>
+        <div class="col-md-4 p-3">
+          <h2 class="mb-4">Openings</h2>
+          <p>11:00 - 15:00 &amp; 19:00 - 00:00 Tue/Fri <br>11:00 - 15:00 &amp; 19:00 - 02:00 Sat/Sun</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 mt-3">
+          <p class="text-center text-muted">© Copyright 2018 Pingendo - All rights reserved. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- JavaScript dependencies -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <!-- Script: Smooth scrolling between anchors in the same page -->
+  <script src="/static/js/smooth-scroll.js"></script>
+</body>
+
+</html>
